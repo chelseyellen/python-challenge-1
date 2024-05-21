@@ -53,16 +53,7 @@ menu = {
 # 1. Set up order list. Order list will store a list of dictionaries for
 # menu item name, item price, and quantity ordered
 order_list = [
-  {
-    "Item name": "string",
-    "Price": float,
-    "Quantity": int
-  },
-  {
-    "Item name": "string",
-    "Price": float,
-    "Quantity": int
-  },
+
 ]
 
 # Launch the store and present a greeting to the customer
@@ -148,12 +139,11 @@ while place_order:
                     if quantity.isdigit():
 
                     # Add the item name, price, and quantity to the order list
-                    order_list.append(
-                        {'item name':str(menu_selection), 
-                         'price': 
-                         'quantity' : int(quantity)
-                        }
-                         )
+                    order_list..append({
+                        "Item name": item_name,
+                        "Price": menu_items[menu_selection]["Price"],
+                        "Quantity": quantity
+                    })
 
                     # Tell the customer that their input isn't valid
 
