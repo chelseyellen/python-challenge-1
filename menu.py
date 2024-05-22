@@ -118,7 +118,7 @@ while place_order:
                     }
                     i += 1
             # 2. Ask customer to input menu item number
-            menu_selection = input("Type item number you would like to order.")
+            menu_selection = input("Type item number you would like to order: ")
 
             # 3. Check if the customer typed a number
             if menu_selection.isdigit():
@@ -211,8 +211,8 @@ for x in range(len(order_list)):
 
     # 8. Calculate the number of spaces for formatted printing
     number_item_spaces = 26 - len(item_name)
-    number_price_spaces = 8 - len(str(price))
-    number_quantity_spaces = 9- len(str(quantity))
+    number_price_spaces = 6 - len(str(price))
+    number_quantity_spaces = 10 - len(str(quantity))
 
     # 9. Create space strings
     item_spaces = " " * number_item_spaces
